@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("reset.css");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #929292;
+  color: #fff;
+}
+
+.images {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 50px 15px;
+}
+.images img {
+  max-width: 300px;
+}
+.images__item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.images__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.images__image {
+  display: inline-block;
+}
+.images__text {
+  display: inline-block;
+}
+.images__text::before {
+  content: "–";
+  font-size: 18px;
+  margin-right: 7px;
+}
+.images__image_question-mark {
+  width: 34px;
+  height: 34px;
+  background: url("../img/question-mark.svg") 0 0 no-repeat;
+}
+.images__image_arrow-bottom {
+  width: 14px;
+  height: 8px;
+  background: url("../img/arrow-bottom.svg") 0 0 no-repeat;
+}
